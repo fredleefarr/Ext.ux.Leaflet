@@ -1,3 +1,21 @@
+/* 
+A simple wrapper for Cloudmade Leaflet for use with Sencha Touch 2.
+
+Example usage: 
+
+    Ext.application({
+        name: 'Sencha',
+        launch: function () {
+            var map = Ext.create('Ext.Leaflet', {});
+            Ext.create('Ext.Panel', {
+                fullscreen: true,
+                layout: 'fit',
+                items: [map]
+            });
+        }
+    });
+*/
+
 Ext.define('Ext.Leaflet', {
     extend: 'Ext.Component',
     map: null,
